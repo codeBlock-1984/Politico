@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+   
+    <title>Politico - Your Online Voting Pal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+<div id="main">
+      <div  class="container">
+          <div class="wrapper">
+              <div class="img-box">
+                    <img id="main-logo" src="img/logo.png" alt="Politico logo">
+                    <h1><span class="brand">POLITICO</span> </h1>
+              </div>
+              
+              <h2>Online Cloud-based Election Manager</h2>
+              <p>Secure, efficient, easy</p>
+              <div id="register">
+                    <ul>
+                        <li>
+                            <button class="openbtn" onclick="openNav1()">Login</button>
+                        </li>
+                        <li>
+                            <button class="openbtn" onclick="openNav()" >Sign up</button>
+                        </li>
+                    </ul>
+              </div>
+              
+          </div>
+          
+      </div>
+
+      <div class="footer">
+            <div class="wrapper">
+                <div class="footer-main">
+                      <p>Copyright &copy; 2019 Politico</p>
+                      <p>This is the beta version of a test product of ICE Inc.</p>
+        
+                </div>
+           </div>
+      </div> 
+      
+    </div>
+    <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <form action="/action_page.php" style="border:1px solid #ccc">
+                <div class="contain">
+                  
+                  <label for="firstname"><b>Firstname</b></label>
+                  <input type="text" placeholder=" " name="firstname" required>
+                  <label for="lastname"><b>Lastname</b></label>
+                  <input type="text" placeholder="" name="last" required>
+                  <label for="othername"><b>Other name</b></label>
+                  <input type="text" placeholder="" name="othername" required>
+                  <label for="phonenumber"><b>Phone number</b></label>
+                  <input type="text" placeholder="" name="phonenumber" required>
+                  <label for="Passporturl"><b>Passport URL</b></label>
+                  <input type="text" placeholder="" name="passporturl" required>
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="" name="psw" required>
+              
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input type="password" placeholder = "" name="psw-repeat" required>
+                  
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                  </label>
+              
+                  <div class="clearfix">
+                    <button type="button" class="cancelbtn">CANCEL</button>
+                    <button type="submit" class="signupbtn"><a href="user.html">SIGN UP</a> </button>
+                  </div>
+                </div>
+              </form>
+          </div>
+
+          <div id="mySidebar1" class="sidebar">
+            <a href="javascript:void(0)"  class="closebtn" onclick="closeNav1()">&times;</a>
+            <form action="/action_page.php" id="login" style="border:1px solid #ccc">
+                <div class="contain">
+                  
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="" name="psw" required>
+              
+                  
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                  </label>
+              
+                  <div class="clearfix">
+                    <button type="button" class="cancelbtn">CANCEL</button>
+                    <button type="submit" class="signupbtn"><a href="user.html">LOGIN</a> </button>
+                  </div>
+                </div>
+              </form>
+          </div>     
+   <script src="js/script.js"></script>   
+  </body>
+
+  </html>
