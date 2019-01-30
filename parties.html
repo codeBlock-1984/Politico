@@ -122,7 +122,7 @@
               </div><!--end main-box inner-->
               <div class="action-buttons">
                  <button id="myBtn"><i class="fas fa-plus-circle"></i></button> 
-                 <button><i class="fas fa-edit"></i></button> 
+                 <button id="editBtn"><i class="fas fa-edit"></i></button> 
                  <button><i class="fas fa-trash-alt"></i></button> 
               </div>
 
@@ -146,8 +146,37 @@
                  
                 
                     <div class="clearfix">
-                      <button type="button" id="cncl" class="cancelbtn">CANCEL</button>
+                      <button type="button" id="cncl" class="modalCancel">CANCEL</button>
                       <button type="" id="add" class="">ADD </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            
+            </div>
+
+            <!-- edit modal-->
+            <div id="editModal" class="modal">
+
+              <!-- Modal content -->
+              <div id="edit-party" class="modal-content">
+                <span class="close">&times;</span>
+                <form method="POST" style="border:1px solid #ccc">
+                  <div class="contain">
+                    <p id="ed"></p>
+                    <label for="partyname"><b>Party name</b></label>
+                    <input type="text" id="eName" placeholder=" " name="partyname" required>
+                    <label for="hqA"><b>Headquarters Address</b></label>
+                    <input type="text" id="eAdd" placeholder="" name="hqA" required>
+                    <!-- <label for="hqS"><b>Headquarters - State</b></label>
+                    <input type="text" placeholder="" name="hqS" required>
+                    <label for="partylogo"><b>Upload Party Logo</b></label>
+                    <input type="file" name="partylogo" accept="image/*">-->
+                 
+                
+                    <div class="clearfix">
+                      <button type="button" class="modalCancel">CANCEL</button>
+                      <button type="" id="add" class="modalSubmit">UPDATE</button>
                     </div>
                   </div>
                 </form>

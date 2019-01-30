@@ -414,7 +414,7 @@ div.party-box img{
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #201e1e;
+    background: #ffffff;
     margin: 100px auto; /* 15% from the top and centered */
     padding: 20px;
     padding-left: 50px;
@@ -425,14 +425,10 @@ div.party-box img{
     height: 500px;
     overflow: auto;
   }
-  div#add-party{
-    background: #ffffff;
-    
-  }
-  div#add-party div.contain{
+  div.modal-content div.contain{
       padding-top: 100px;
   }
-  div#add-party div.contain input[type=text]{
+  div.modal-content div.contain input[type=text]{
       background: #dddddd;
   }
   div.contain p{
