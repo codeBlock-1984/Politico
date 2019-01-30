@@ -123,7 +123,7 @@
               <div class="action-buttons">
                  <button id="myBtn"><i class="fas fa-plus-circle"></i></button> 
                  <button id="editBtn"><i class="fas fa-edit"></i></button> 
-                 <button><i class="fas fa-trash-alt"></i></button> 
+                 <button id="delBtn"><i class="fas fa-trash-alt"></i></button> 
               </div>
 
           </div>
@@ -177,6 +177,30 @@
                     <div class="clearfix">
                       <button type="button" class="modalCancel">CANCEL</button>
                       <button type="" id="add" class="modalSubmit">UPDATE</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            
+            </div>
+
+            <!-- delete modal-->
+            <div id="delModal" class="modal">
+
+              <!-- Modal content -->
+              <div id="del-party" class="modal-content">
+                <span class="close">&times;</span>
+                <form method="POST" style="border:1px solid #ccc">
+                  <div class="contain">
+                    <p id="ed"></p>
+                    <label for="partyname"><b>Party name</b></label>
+                    <select id="selectParty">
+                     
+                    </select>
+                    
+                    <div class="clearfix">
+                      <button type="button" class="modalCancel">CANCEL</button>
+                      <button type="" id="add" class="modalSubmit">DELETE</button>
                     </div>
                   </div>
                 </form>
