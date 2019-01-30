@@ -95,6 +95,7 @@ function displayMyVote(){
       z--;
     }
   }
+  
 }
 
 let clearForm = () => {

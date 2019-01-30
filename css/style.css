@@ -296,10 +296,29 @@ div.img-box{
       z-index: 1;
   }
   div.main-box-inner{
-      width: 80%;
+      width: 90%;
       margin: auto;
       padding: 50px;
       padding-top: 30px;
+  }
+  div#dash{
+      width: 60%;
+  }
+  div#set-box{
+      width: 30%;
+      padding-left: 80px;
+      margin-left: 30px;
+      height: 500px;
+      border-left: solid 1px #888;
+  }
+  div#set-box button{
+      width: 200px;
+      height: 60px;
+      padding: 10px 20px;
+      outline: none;
+      background: rgb(21, 5, 27);
+      color: #f1f1f1;
+
   }
   div#footer-main{
       bottom: 0 !important;
@@ -468,6 +487,9 @@ div.party-box img{
     margin: 16px 20px;
     display: inline-block;
   }
+  .card-row a{
+      color: inherit;
+  }
   .cand-box h1{
     padding-top: 10px !important;
     padding: 0 !important;
@@ -561,13 +583,13 @@ div.party-box img{
     position: relative;
   }
   div#ballot img{
-      width: 90%;
+      width: 100%;
       margin: auto;
       margin-left: 20px;
       border: none !important;
   }
   .vote {
-    width: 150px;
+    width: 200px;
     height: 100px;
     margin-top: 50px;
     margin-left: 100px;
