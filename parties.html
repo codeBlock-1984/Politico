@@ -130,24 +130,24 @@
           <div id="myModal" class="modal">
 
               <!-- Modal content -->
-              <div class="modal-content">
+              <div id="add-party" class="modal-content">
                 <span class="close">&times;</span>
-                <form action="/action_page.php" style="border:1px solid #ccc">
+                <form method="POST" style="border:1px solid #ccc">
                   <div class="contain">
-                    
+                    <p id="ed"></p>
                     <label for="partyname"><b>Party name</b></label>
-                    <input type="text" placeholder=" " name="partyname" required>
-                    <label for="hqC"><b>Headquarters - City</b></label>
-                    <input type="text" placeholder="" name="hqC" required>
-                    <label for="hqS"><b>Headquarters - State</b></label>
+                    <input type="text" id="pName" placeholder=" " name="partyname" required>
+                    <label for="hqA"><b>Headquarters Address</b></label>
+                    <input type="text" id="pAdd" placeholder="" name="hqA" required>
+                    <!-- <label for="hqS"><b>Headquarters - State</b></label>
                     <input type="text" placeholder="" name="hqS" required>
                     <label for="partylogo"><b>Upload Party Logo</b></label>
-                    <input type="file" name="partylogo" accept="image/*">
+                    <input type="file" name="partylogo" accept="image/*">-->
                  
                 
                     <div class="clearfix">
-                      <button type="button" class="cancelbtn">CANCEL</button>
-                      <button type="submit" class="signupbtn"><a href="user.html">SIGN UP</a> </button>
+                      <button type="button" id="cncl" class="cancelbtn">CANCEL</button>
+                      <button type="" id="add" class="">ADD </button>
                     </div>
                   </div>
                 </form>

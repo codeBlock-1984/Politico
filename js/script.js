@@ -123,3 +123,30 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+document.getElementById("cncl").onclick = function() {
+  modal.style.display = "none";
+}
+var partyArray =[];
+document.getElementById("add").onclick = function() {
+  //modal.style.display = "block";
+  var pN = document.getElementById("pName").value;
+  var pA = document.getElementById("pAdd").value;
+  var errorDisp = document.getElementById("ed").innerHTML;
+  //if(pN & pA){
+    var newParty = new Party(pN, pA);
+    partyArray.push(newParty);
+    var errorDisp = partyArray;
+  //} else{
+  //  let errorDisp = "All fields are required!";
+  //}
+}
+class Party {
+
+  constructor(name, hq){
+    this.name = name;
+    this.hqAddress = hq;
+    this.addnew(this.name, this.hqAddress);
+
+  }
+
+}
