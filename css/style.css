@@ -125,13 +125,13 @@ div.img-box{
       padding-top: 20px;
   }
 
-  input[type=text], input[type=password], input[type=file] {
+  input[type=text], input[type=password], input[type=file], textarea {
     width: 90%;
     margin: auto;
     padding: 5px;
     margin: 5px 0 5px 0;
     display: block;
-    border: none;
+    border: solid 1px #aaa;
     background: #f1f1f1;
     border-radius: 2px;
   }
@@ -250,7 +250,7 @@ div.img-box{
   div.aside{
       float: left;
       width: 350px;
-      min-height: 600px;
+      min-height: 700px;
       background: rgb(48, 12, 63);
       padding-top: 120px;
       padding-left: 50px;
@@ -291,8 +291,9 @@ div.img-box{
       min-height: 600px;
       width: calc(100% - 350px);
       background: #ffffff;
-      padding-top: 100px;
+      padding-top: 70px;
       color: rgb(129, 129, 129);
+      z-index: 1;
   }
   div.main-box-inner{
       width: 80%;

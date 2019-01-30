@@ -96,3 +96,16 @@ function displayMyVote(){
     }
   }
 }
+
+let clearForm = () => {
+  document.getElementById("contest-form").reset();
+}
+let conSubmit = () => {
+  let fName = document.getElementById("fN").value;
+  let lName = document.getElementById("lN").value;
+  let party = document.getElementById("pty").value;
+  let office = document.getElementById("of").value;
+  let manifesto = document.getElementById("man").value;
+
+  let newCandidate = {name: fName + lName, party: party, office: office, manifesto: manifesto};
+}

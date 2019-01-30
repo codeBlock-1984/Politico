@@ -41,66 +41,33 @@
           <div class="main-box">
               <div class="main-box-inner party-box">
 
-                <h1>Candidates</h1>
+                <h1>Contest Form</h1>
                 <hr>
                 
-                <div class="card-row">
-                <div class="cand-box">
-                    <img src="img/can1.jpg" alt="Avatar" style="width:90px">
-                    <div class="detail-box">
-                    <h2>Chris Otete</h2>
-                    <p><span class="cand-title">Party :</span>Action Congress</p>
-                    <p><span class="cand-title">Office :</span>President</p>
-                    </div>
-                    
-                </div>
-                <div class="cand-box">
-                    <img src="img/can2.jpg" alt="Avatar" style="width:90px">
-                    <div class="detail-box">
-                    <h2>Amaka Ezeoke</h2>
-                    <p><span class="cand-title">Party :</span> All People's Grand Alliance</p>
-                    <p><span class="cand-title">Office :</span>Vice-President</p>
-                    </div>
-            
-                </div>
-                </div>
+                
 
                 <div class="card-row">
-                <div class="cand-box">
-                    <img src="img/can3.jpg" alt="Avatar" style="width:90px">
-                    <div class="detail-box">
-                    <h2>Fela Durotoye</h2>
-                    <p><span class="cand-title">Party :</span>Labour Party</p>
-                    <p><span class="cand-title">Office :</span>Senate President</p>
-                    </div>
-                </div>
-                <div class="cand-box">
-                    <img src="img/can4.jpg" alt="Avatar" style="width:90px">
-                    <div class="detail-box">
-                    <h2>Muhammadu Buhari</h2>
-                    <p><span class="cand-title">Party :</span> All People's Congress</p>
-                    <p><span class="cand-title">Office :</span>President</p>
-                    </div>
-                </div>
-                </div>
-
-                <div class="card-row">
-                <div class="cand-box">
-                    <img src="img/can5.jpg" alt="Avatar" style="width:90px">
-                    <div class="detail-box">
-                    <h2>Emeka Agu</h2>
-                    <p><span class="cand-title">Party :</span> All People's Progressive Party</p>
-                    <p><span class="cand-title">Office :</span>Chief Judge of the Federation</p>
-                    </div>
-                </div>
-                    <div class="cand-box">
-                    <img src="img/can6.jpg" alt="Avatar" style="width:90px">
-                    <div class="detail-box">
-                    <h2>Hassan Bashiru</h2>
-                    <p><span class="cand-title">Party :</span>People's Progressive Party</p>
-                    <p><span class="cand-title">Office :</span>Senate President</p>
-                    </div>
-                </div>
+                        <form id="contest-form" action="" style="border:1px solid #ccc">
+                            <div class="contain">
+                              
+                              <label for="firstname"><b>Firstname</b></label>
+                              <input id="fN" type="text" placeholder=" " name="firstname" required>
+                              <label for="lastname"><b>Lastname</b></label>
+                              <input id="lN" type="text" placeholder="" name="last" required>
+                              <label for="party"><b>Party</b></label>
+                              <input id="pty" type="text" placeholder="" name="party" required>
+                              <label for="office"><b>Office</b></label>
+                              <input id="of" type="text" placeholder="" name="office" required>
+                              
+                              <label for="manifesto"><b>Manifesto</b></label>
+                              <textarea id="man" name="manifesto" rows="10" cols="100" required></textarea>
+                          
+                              <div class="clearfix">
+                                <button type="button" class="cancelbtn" onclick="clearForm()">CANCEL</button>
+                                <button type="submit" class="signupbtn" onclick="conSubmit()">SUBMIT</button>
+                              </div>
+                            </div>
+                          </form>
                 </div>
                       
                 
