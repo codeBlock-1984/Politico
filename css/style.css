@@ -7,7 +7,7 @@ html{
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(48, 12, 63);
+    background: #f1f1f1;
     color: rgb(192, 192, 192);
     margin: 0;
     min-height: 100%;
@@ -21,12 +21,16 @@ img#main-logo{
 div.container{
     box-sizing: border-box;
     padding-top: 60px; 
-    width:90%;
+    width:100%;
     min-width: 400px;
     margin: 0 auto;
+    color: rgb(21, 5, 27);
     text-align: center;
-    
+    background: #f1f1f1;
     min-height: calc(100vh - 100px);
+}
+div#register{
+    padding-bottom: 40px;
 }
 div#register ul{
     list-style: none;
@@ -39,18 +43,21 @@ div#register li{
     width: 150px;
     height:50px;
     display: inline-block;
-    padding-top: 18px;
+    padding-top: 1px;
     margin: 0 5px;
-    background: #ffffff;
+    background: rgb(21, 5, 27);
     border-radius: 5px;
-    color: rgb(21, 5, 27) !important;
+    color: #ffffff;
+    border: #9605b3 solid 1px;
 }
 div#register li:hover{
-    background: rgb(193, 50, 245);
+    background: rgb(48, 12, 63);
     color: #ffffff;
     cursor: pointer;
 }
 div#register li button{
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -67,7 +74,7 @@ div.footer{
     clear: both;
     width: 100%;
     height: 100px; 
-    margin-top: 10px;
+    margin-top: 0px;
     padding-top: 10px; 
     background: rgb(21, 5, 27);
     font-size: 14px;
@@ -86,8 +93,8 @@ div.img-box{
     padding: 20px 10px;
     margin: auto;
     margin-bottom: 50px;
-    border: solid 1px rgba(21, 5, 27, 0.418);
-    background: rgba(21, 5, 27, 0.418);
+    border: solid 1px rgba(21, 5, 27);
+    background: rgba(21, 5, 27);
     border-radius: 8px;
 }
 .brand{
@@ -101,7 +108,7 @@ div.img-box{
     z-index: 1; /* Stay on top */
     top: 0;
     right: 0;
-    background-color: rgba(21, 5, 27, 0.418); /* Black*/
+    background-color: rgb(48, 12, 63); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     overflow-y: hidden;
     padding-top: 10px; /* Place content 60px from the top */
@@ -244,7 +251,7 @@ div.img-box{
       float: left;
       width: 350px;
       min-height: 600px;
-      background: inherit;
+      background: rgb(48, 12, 63);
       padding-top: 120px;
       padding-left: 50px;
       position: fixed;
