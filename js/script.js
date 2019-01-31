@@ -105,7 +105,9 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close");
+var cancelBtn = document.getElementsByClassName("modalCancel");
+var submitModal = document.getElementsByClassName("modalSubmit");
 
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
@@ -113,7 +115,7 @@ btn.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span[0].onclick = function() {
   modal.style.display = "none";
 }
 
@@ -123,11 +125,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-document.getElementById("cncl").onclick = function() {
+cancelBtn[0].onclick = function() {
   modal.style.display = "none";
 }
 var partyArray =[];
-document.getElementById("add").onclick = function() {
+submitModal[0].onclick = function() {
   //modal.style.display = "block";
   var pN = document.getElementById("pName").value;
   var pA = document.getElementById("pAdd").value;
@@ -140,6 +142,34 @@ document.getElementById("add").onclick = function() {
   //  let errorDisp = "All fields are required!";
   //}
 }
+
+var modalE = document.getElementById('editModal');
+var btnE = document.getElementById("editBtn");
+
+btnE.onclick = function() {
+  modalE.style.display = "block";
+}
+
+span[1].onclick = function() {
+  modalE.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalE) {
+    modalE.style.display = "none";
+  }
+}
+cancelBtn[1].onclick = function() {
+  modalE.style.display = "none";
+}
+submitModal[1].onclick = function() {
+  //modal.style.display = "block";
+  var eN = document.getElementById("eName").value;
+  var eA = document.getElementById("eAdd").value;
+  var updatedParty = {name: eN, hqAddress: eA};
+}
+
 class Party {
 
   constructor(name, hq){
