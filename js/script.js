@@ -1,7 +1,7 @@
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-var nav1open = false;
-var nav2open = false;
-function openNav() {
+
+let nav1open = false;
+let nav2open = false;
+const openNav = () => {
   if(!nav2open){
     closeNav1();
     document.getElementById("mySidebar").style.display = "initial";
@@ -11,46 +11,40 @@ function openNav() {
   }
     
   }
-  
-  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-  function closeNav() {
+
+  const closeNav = () => {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginRight = "0";
     nav1open = false;
   }
 
-  function openNav1() {
+  const openNav1 = () => {
     if(!nav1open){
       closeNav();
-    document.getElementById("mySidebar1").style.display = "initial";
-    document.getElementById("mySidebar1").style.width = "400px";
-    document.getElementById("main").style.marginRight = "400px";
-    nav2open = true;
+      document.getElementById("mySidebar1").style.display = "initial";
+      document.getElementById("mySidebar1").style.width = "400px";
+      document.getElementById("main").style.marginRight = "400px";
+      nav2open = true;
     }
     
     
   }
-  
-  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-  function closeNav1() {
+ 
+  const closeNav1 = () => {
     document.getElementById("mySidebar1").style.display = "none";
     document.getElementById("mySidebar1").style.width = "0";
     document.getElementById("main").style.marginRight = "0";
     nav2open = false;
   }
 
-var acc = document.getElementsByClassName("office-list");
-var i;
+const acc = document.getElementsByClassName("office-list");
+let i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
+  acc[i].addEventListener("click", () => {
     this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
+    let panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
     } else {
@@ -59,21 +53,20 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-var count = 3;
-function myMove() {
+let count = 3;
+const myMove = () => {
   
   if(count >= 0){
-    var elem = document.getElementsByClassName("vote"); 
-    var i = count;  
-    var pos = 200;
-    var id = setInterval(frame, 0.000000000000000000000001);
-    function frame() {
+    let elem = document.getElementsByClassName("vote"); 
+    let i = count;  
+    let pos = 200;
+    let id = setInterval(frame, 0.000000000000000000000001);
+    const frame = () => {
       if (pos == 350) {
         clearInterval(id);
       } else {
         pos++; 
         elem[i].style.top = pos + 'px'; 
-        //elem.style.left = pos + 'px'; 
       }
     }
   
@@ -84,11 +77,11 @@ function myMove() {
   }
   
 }
-function displayMyVote(){
-  var votes = document.getElementsByClassName("single-vote");
-  var results = document.getElementsByClassName("res");
-  var j, z = 3;
-  var len = votes.length;
+const displayMyVote = () => {
+  let votes = document.getElementsByClassName("single-vote");
+  let results = document.getElementsByClassName("res");
+  let j, z = 3;
+  let len = votes.length;
   for(j = 0; j < len; j++){
     if(votes[j].checked == true){
       results[z].innerHTML = votes[j].value;
@@ -98,15 +91,15 @@ function displayMyVote(){
   
 }
 
-let clearForm = () => {
+const clearForm = () => {
   document.getElementById("contest-form").reset();
 }
-let conSubmit = () => {
-  let fName = document.getElementById("fN").value;
-  let lName = document.getElementById("lN").value;
-  let party = document.getElementById("pty").value;
-  let office = document.getElementById("of").value;
-  let manifesto = document.getElementById("man").value;
+const conSubmit = () => {
+  let fName = document.getElementById("fName").value;
+  let lName = document.getElementById("lName").value;
+  let party = document.getElementById("party").value;
+  let office = document.getElementById("offfice").value;
+  let manifesto = document.getElementById("manifesto").value;
 
   let newCandidate = {name: fName + lName, party: party, office: office, manifesto: manifesto};
 }
