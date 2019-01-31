@@ -414,17 +414,33 @@ div.party-box img{
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #201e1e;
     margin: 100px auto; /* 15% from the top and centered */
     padding: 20px;
     padding-left: 50px;
+    color: #201e1e;
     border: 1px solid #888;
     border-radius: 10px;
     width: 700px; /* Could be more or less, depending on screen size */
     height: 500px;
     overflow: auto;
   }
-  
+  div#add-party{
+    background: #ffffff;
+    
+  }
+  div#add-party div.contain{
+      padding-top: 100px;
+  }
+  div#add-party div.contain input[type=text]{
+      background: #dddddd;
+  }
+  div.contain p{
+      color: rgb(161, 4, 4);
+  }
+  div.clearfix button{
+      background: #aaa;
+  }
   /* The Close Button */
   .close {
     color: #aaa;
