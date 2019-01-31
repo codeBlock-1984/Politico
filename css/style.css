@@ -421,12 +421,12 @@ div.party-box img{
     color: #201e1e;
     border: 1px solid #888;
     border-radius: 10px;
-    width: 700px; /* Could be more or less, depending on screen size */
-    height: 500px;
+    width: 500px; /* Could be more or less, depending on screen size */
+    height: 300px;
     overflow: auto;
   }
   div.modal-content div.contain{
-      padding-top: 100px;
+      padding-top: 10px;
   }
   div.modal-content div.contain input[type=text]{
       background: #dddddd;

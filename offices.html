@@ -89,7 +89,39 @@
                          
                 
               </div>
+              <div class="action-buttons">
+                <button id="oBtn"><i class="fas fa-plus-circle"></i></button> 
+                <button id="editBtnO"><i class="fas fa-edit"></i></button> 
+                <button id="delBtnO"><i class="fas fa-trash-alt"></i></button> 
+             </div>
               
+          </div>
+          <div id="oModal" class="modal">
+
+            <!-- Modal content -->
+            <div id="add-office" class="modal-content">
+              <span class="close">&times;</span>
+              <form method="POST" style="border:1px solid #ccc">
+                <div class="contain">
+                  <p id="ed"></p>
+                  <label for="officename"><b>Office name</b></label>
+                  <input type="text" id="oName" placeholder=" " name="officename" required>
+                  <label for="type"><b>Office type</b></label>
+                  <input type="text" id="oType" placeholder="" name="officetype" required>
+                  <!-- <label for="hqS"><b>Headquarters - State</b></label>
+                  <input type="text" placeholder="" name="hqS" required>
+                  <label for="partylogo"><b>Upload Party Logo</b></label>
+                  <input type="file" name="partylogo" accept="image/*">-->
+               
+              
+                  <div class="clearfix">
+                    <button type="button" id="cncl" class="modalCancel">CANCEL</button>
+                    <button type="" id="add" class="submit">ADD</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          
           </div>
 
       <div id="footer-main" class="footer">
@@ -102,7 +134,8 @@
            </div>
       </div> 
    
-   <script src="js/script.js"></script>   
+   <script src="js/script.js"></script> 
+   <script src="js/office.js"></script>  
   </body>
 
   </html>
