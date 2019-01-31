@@ -21,7 +21,7 @@
 
                     
                     <a href="index.html"> <p style="font-size: 18px; color: rgb(121, 198, 228);">Log out</p></a>
-                    <span style="color: rgb(121, 198, 228);"><i class="fas fa-cog"></i></span>
+                    <span style="color: rgb(121, 198, 228);"> <a href="user.html"><i class="fas fa-cog"></i></a></span>
 
                     <!-- <span style="color: rgb(121, 198, 228);"><i class="fas fa-user-alt"></i></span> -->
                     
@@ -36,6 +36,8 @@
                <a href="offices.html" style="padding-left:5px; "><div class="icon-box" style="padding-left: 8px; width: 43px !important;" ><span class="side-icon" style="margin-right: 10px !important;"><i class="fas fa-briefcase"></i></span></div> <p>OFFICES</p></a>
 
                <a href="vote.html" style="padding-left:5px; "><div class="icon-box" style="padding-left: 8px; width: 43px !important;" ><span class="side-icon" style="margin-right: 10px !important;"><i class="fas fa-vote-yea"></i></span></div> <p>VOTE</p></a> 
+
+               <a href="contest.html" style="padding-left:5px "><div class="icon-box" style="padding-left: 8px; width: 43px !important;" ><span class="side-icon" style="margin-right: 10px !important;"><i class="fas fa-file-signature"></i></span></div> <p>CONTEST</p></a>
           </div>
           <div class="main-box">
               <div class="main-box-inner party-box">
@@ -45,6 +47,7 @@
                 
                 <button class="office-list">President</button>
                 <div class="panel">
+                    <p><a href="muhammadu-buhari.html">Muhammadu Buhari</a></p>
                     <p>Ikem Ejeagha Okechukwu</p>
                     <p>Cynthia Joke-Silva</p>
                     <p>Ibrahim Abubarka Hussain</p>
@@ -52,6 +55,7 @@
 
                 <button class="office-list">Vice-President</button>
                 <div class="panel">
+                    <p><a href="amaka-ezeoke.html">Amaka Ezeoke</a></p>
                     <p>Mike Moghalu Tomson</p>
                     <p>Obiageli Ezekwesili</p>
                     <p>Aishat Hassana Ibrahim</p>
@@ -59,6 +63,7 @@
 
                 <button class="office-list">Senate President</button>
                 <div class="panel">
+                    <p><a href="fela-durotoye.html">Fela Durotoye</a></p>
                     <p>Akinwunmi Ambode Mark</p>
                     <p>Donald Duke Ubong-Etuk</p>
                     <p>Ikechukwu Samuel Etoho</p>
@@ -66,6 +71,7 @@
 
                 <button class="office-list">Head, House of Representatives</button>
                 <div class="panel">
+                    <p><a href="emeka-agu.html">Emeka Agu</a></p>
                     <p>Ikem Ejeagha Okechukwu</p>
                     <p>Cynthia Joke-Silva</p>
                     <p>Ibrahim Abubarka Hussain</p>
@@ -73,6 +79,7 @@
 
                 <button class="office-list">Minister of Power, Housing and Works</button>
                 <div class="panel">
+                    <p><a href="chris-otete.html">Chris Otete</a></p>
                     <p>Mike Moghalu Tomson</p>
                     <p>Obiageli Ezekwesili</p>
                     <p>Aishat Hassana Ibrahim</p>
@@ -80,6 +87,7 @@
 
                 <button class="office-list">Minister of Health</button>
                 <div class="panel">
+                    <p><a href="hassan-bashiru.html">Hassan Bashiru</a></p>
                     <p>Akinwunmi Ambode Mark</p>
                     <p>Donald Duke Ubong-Etuk</p>
                     <p>Ikechukwu Samuel Etoho</p>
@@ -90,13 +98,13 @@
                 
               </div>
               <div class="action-buttons">
-                <button id="oBtn"><i class="fas fa-plus-circle"></i></button> 
-                <button id="editBtnO"><i class="fas fa-edit"></i></button> 
-                <button id="delBtnO"><i class="fas fa-trash-alt"></i></button> 
+                <button id="add-office-Btn"><i class="fas fa-plus-circle"></i></button> 
+                <button id="edit-office-Btn"><i class="fas fa-edit"></i></button> 
+                <button id="del-office-Btn"><i class="fas fa-trash-alt"></i></button> 
              </div>
               
           </div>
-          <div id="oModal" class="modal">
+          <div id="officeModal" class="modal">
 
             <!-- Modal content -->
             <div id="add-office" class="modal-content">
@@ -105,9 +113,9 @@
                 <div class="contain">
                   <p id="ed"></p>
                   <label for="officename"><b>Office name</b></label>
-                  <input type="text" id="oName" placeholder=" " name="officename" required>
+                  <input type="text" id="officeName" placeholder=" " name="officename" required>
                   <label for="type"><b>Office type</b></label>
-                  <input type="text" id="oType" placeholder="" name="officetype" required>
+                  <input type="text" id="officeType" placeholder="" name="officetype" required>
                   <!-- <label for="hqS"><b>Headquarters - State</b></label>
                   <input type="text" placeholder="" name="hqS" required>
                   <label for="partylogo"><b>Upload Party Logo</b></label>
@@ -115,7 +123,7 @@
                
               
                   <div class="clearfix">
-                    <button type="button" id="cncl" class="modalCancel">CANCEL</button>
+                    <button type="button" id="cancel-button" class="modalCancel">CANCEL</button>
                     <button type="" id="add" class="submit">ADD</button>
                   </div>
                 </div>
@@ -139,3 +147,4 @@
   </body>
 
   </html>
+  

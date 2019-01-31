@@ -1,112 +1,96 @@
-//modal js
-// Get the modal
-var modal = document.getElementById('myModal');
 
-//Get the button that opens the modal
-var btnP = document.getElementById("myBtn");
+let modal = document.getElementById('myModal');
+let btnP = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close");
-var cancelBtn = document.getElementsByClassName("modalCancel");
-var submitModal = document.getElementsByClassName("modalSubmit");
+let span = document.getElementsByClassName("close");
+let cancelBtn = document.getElementsByClassName("modalCancel");
+let submitModal = document.getElementsByClassName("modalSubmit");
 
-// When the user clicks on the button, open the modal 
-btnP.onclick = function() {
+btnP.onclick = () => {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-span[0].onclick = function() {
+span[0].onclick = () => {
   modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = (event) => {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
-cancelBtn[0].onclick = function() {
+cancelBtn[0].onclick = () => {
   modal.style.display = "none";
 }
-var partyArray =["APC", "PDP", "LP", "APGA"];
-submitModal[0].onclick = function() {
-  //modal.style.display = "block";
-  var pN = document.getElementById("pName").value;
-  var pA = document.getElementById("pAdd").value;
-  var errorDisp = document.getElementById("ed").innerHTML;
-  //if(pN & pA){
-    var newParty = new Party(pN, pA);
-    partyArray.push(newParty);
-    var errorDisp = partyArray;
-  //} else{
-  //  let errorDisp = "All fields are required!";
-  //}
+let partyArray =["APC", "PDP", "LP", "APGA"];
+submitModal[0].onclick = () => {
+  let pN = document.getElementById("pName").value;
+  let pA = document.getElementById("pAdd").value;
+  let errorDisp = document.getElementById("ed").innerHTML;
+  let newParty = new Party(pN, pA);
+  partyArray.push(newParty);
+  let errorDisp = partyArray;
+  
 }
 
-var modalE = document.getElementById('editModal');
-var btnE = document.getElementById("editBtn");
+let modalE = document.getElementById('editModal');
+let btnE = document.getElementById("editBtn");
 
-btnE.onclick = function() {
+btnE.onclick = () => {
   modalE.style.display = "block";
 }
 
-span[1].onclick = function() {
+span[1].onclick = () => {
   modalE.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = (event) => {
   if (event.target == modalE) {
     modalE.style.display = "none";
   }
 }
-cancelBtn[1].onclick = function() {
+cancelBtn[1].onclick = () => {
   modalE.style.display = "none";
 }
-submitModal[1].onclick = function() {
-  //modal.style.display = "block";
-  var eN = document.getElementById("eName").value;
-  var eA = document.getElementById("eAdd").value;
-  var updatedParty = {name: eN, hqAddress: eA};
+submitModal[1].onclick = () => {
+  let eN = document.getElementById("eName").value;
+  let eA = document.getElementById("eAdd").value;
+  let updatedParty = {name: eN, hqAddress: eA};
 }
 
-var modalD = document.getElementById("delModal");
-var btnD = document.getElementById("delBtn");
+let modalD = document.getElementById("delModal");
+let btnD = document.getElementById("delBtn");
 
-btnD.onclick = function() {
+btnD.onclick = () => {
   modalD.style.display = "block";
-  var selectP = document.getElementById("selectParty");  
+  let selectP = document.getElementById("selectParty");  
 
-  for(var i = 0; i < partyArray.length; i++) {
-    var opt = partyArray[i];
-    var partyOption = document.createElement("option");
+  for(let i = 0; i < partyArray.length; i++) {
+    let opt = partyArray[i];
+    let partyOption = document.createElement("option");
     partyOption.text = opt;
     partyOption.value = opt;
     selectP.add(partyOption);
   }
 }
 
-span[2].onclick = function() {
+span[2].onclick = () => {
   modalD.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = (event) => {
   if (event.target == modalD) {
     modalD.style.display = "none";
   }
 }
-cancelBtn[2].onclick = function() {
+cancelBtn[2].onclick = () => {
   modalD.style.display = "none";
 }
-submitModal[2].onclick = function() {
-  //modal.style.display = "block";
-  var dParty = document.getElementById("selectParty").value;
+submitModal[2].onclick = () => {
+  let dParty = document.getElementById("selectParty").value;
   partyArray.splice(dParty, 1);
 }
-
-
 
 
 class Party {
