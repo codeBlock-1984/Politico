@@ -128,7 +128,7 @@ window.onclick = function(event) {
 cancelBtn[0].onclick = function() {
   modal.style.display = "none";
 }
-var partyArray =[];
+var partyArray =["APC", "PDP", "LP", "APGA"];
 submitModal[0].onclick = function() {
   //modal.style.display = "block";
   var pN = document.getElementById("pName").value;
@@ -169,6 +169,42 @@ submitModal[1].onclick = function() {
   var eA = document.getElementById("eAdd").value;
   var updatedParty = {name: eN, hqAddress: eA};
 }
+
+var modalD = document.getElementById("delModal");
+var btnD = document.getElementById("delBtn");
+
+btnD.onclick = function() {
+  modalD.style.display = "block";
+  var selectP = document.getElementById("selectParty");  
+
+  for(var i = 0; i < partyArray.length; i++) {
+    var opt = partyArray[i];
+    var partyOption = document.createElement("option");
+    partyOption.text = opt;
+    partyOption.value = opt;
+    selectP.add(partyOption);
+  }
+}
+
+span[2].onclick = function() {
+  modalD.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalD) {
+    modalD.style.display = "none";
+  }
+}
+cancelBtn[2].onclick = function() {
+  modalD.style.display = "none";
+}
+submitModal[1].onclick = function() {
+  //modal.style.display = "block";
+  var dParty = document.getElementById("selectParty").value;
+  partyArray.splice(dParty, 1);
+}
+
 
 class Party {
 
