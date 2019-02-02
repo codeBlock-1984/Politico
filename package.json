@@ -38,13 +38,15 @@
     "express": "^4.16.4",
     "morgan": "^1.9.1"
   },
-  "env":{
+  "env": {
     "commonJS": true,
     "node": true,
     "mocha": true
   },
   "standard": {
-    "env": ["mocha"],
+    "env": [
+      "mocha"
+    ],
     "globals": [
       "describe",
       "context",
@@ -55,5 +57,5 @@
       "it",
       "expect"
     ]
-  }  
+  }
 }
