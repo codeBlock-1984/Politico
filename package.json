@@ -9,6 +9,7 @@
     "serve": "node dist/app.js",
     "test": "nyc mocha --require @babel/register ./tests/*.js --exit",
     "coverage": "npm run nyc -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "nyc": "nyc --reporter=lcov --reporter=text mocha ./tests/*.js --compilers @babel/register --recursive --timeout 50000 --exit"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "babel-core": "^6.26.3",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
+    "coveralls": "^3.0.2",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.15.0",
     "mocha": "^5.2.0",
